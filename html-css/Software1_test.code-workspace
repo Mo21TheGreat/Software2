@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Software1_test",
+			"path": "../../Software1_test"
+		},
+		{
+			"name": "Python Lab",
+			"path": "../../Python Lab"
+		},
+		{
+			"name": "Software2",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Software2"
+	}
+}

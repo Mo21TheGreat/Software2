@@ -1,0 +1,17 @@
+body { 
+    text-align: center; 
+ }
+#board { 
+    display: grid; 
+    grid-template-columns: repeat(var(--cols), 20px); 
+    gap: 1px; 
+    width: max-content; 
+    margin: 1rem auto; 
+    background: #333; }
+.cell { 
+    width: 20px; 
+    height: 20px; 
+    background: #111; 
+    cursor: pointer; }
+.cell.alive { 
+    background: #7ee787; }
