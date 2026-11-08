@@ -1,17 +1,15 @@
+'use strict';
+
 function rollDice() {
-    return Math.floor(Math.random() * 6) + 1;
+  return Math.floor(Math.random() * 6) + 1;
 }
 
 const targetList = document.getElementById('target');
+let roll;
 
-while (true) {
-    const roll = rollDice();
-    
-    const li = document.createElement('li');
-    li.textContent = roll;
-    targetList.appendChild(li);
-
-    if (roll === 6) {
-        break;
-    }
-}
+do {
+  roll = rollDice();
+  const listItem = document.createElement('li');
+  listItem.textContent = roll;
+  targetList.appendChild(listItem);
+} while (roll !== 6);
