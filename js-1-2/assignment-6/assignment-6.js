@@ -1,20 +1,18 @@
-let answer = confirm("Should I calculate the square root? ");
+let answer = confirm("Should I calculate the square root?")
 
-if(answer === true) {
-    let number = Number(prompt("Enter a number: "));
+if (answer === true) {
+    let number = prompt("Enter a number: ")
+    
+    if (number >= 0) {
+        let squareRoot = Math.sqrt(number)
+        document.getElementById("target").textContent = "The square root is " + squareRoot
 
-    if(number < 0) {
-        document.getElementById("target").textContent =
-        "The square root of a negative number is not defined";
-
-    }else{
-        let target = Math.sqrt(number);
-
-        document.getElementById("target").textContent =
-        "The square root is " + target;
+    }
+    else{
+        document.getElementById("target").textContent = "The square root of a negative number is not defined"
     }
 
-}else{
-    document.getElementById("target").textContent =
-    "The square root is not calculated."
+}
+else {
+    document.getElementById("target").textContent = "The square root is not calculated."
 }

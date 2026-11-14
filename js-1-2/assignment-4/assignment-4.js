@@ -1,15 +1,14 @@
-let name = prompt("Enter your name:");
-let randomNumber = Math.floor(Math.random() * 4) + 1;
-let house = "";
-
-if (randomNumber === 1) {
-    house = "Gryffindor";
-} else if (randomNumber === 2) {
-    house = "Slytherin";
-} else if (randomNumber === 3) {
-    house = "Hufflepuff";
-} else {
-    house = "Ravenclaw";
+let name = prompt("What's your name?")
+let number = Math.floor(Math.random() * 4) + 1
+if (number == 1){
+    document.getElementById("target").textContent = name + ", you are Gryffindor."
 }
-
-document.getElementById("target").textContent = name + ", you are " + house + ".";
+else if (number == 2){
+    document.getElementById("target").textContent = name + ", you are Hufflepuff."
+}
+else if (number == 3){
+    document.getElementById("target").textContent = name + ", you are Slytherin."
+}
+else if (number == 4){
+    document.getElementById("target").textContent = name + ", you are Ravenclaw."
+}
