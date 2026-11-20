@@ -14,6 +14,7 @@ for (let i = 0; i < numParticipants; i++) {
 
 participants.sort();
 
+
 const targetElement = document.getElementById('target');
 
 for (let i = 0; i < participants.length; i++) {
@@ -21,3 +22,5 @@ for (let i = 0; i < participants.length; i++) {
     listItem.textContent = participants[i];
     targetElement.appendChild(listItem);
 }
+
+

@@ -1,8 +1,8 @@
 let dice = Number(prompt("Enter the number of dice: "));
 let wantedSum = Number(prompt("Enter the sum of the dice: "));
 
-let successfulRolls= 0;
-let repetitions= 10000;
+let successfulRolls = 0;
+let repetitions = 10000;
 
 
 for (let i = 0; i < repetitions; i++) {
